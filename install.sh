@@ -3,7 +3,7 @@
 NEW_USER="testuser"
 NEW_PASS="Test1234!"
 
-# IP=$(curl -s ifconfig.co)
+IP_INFO=$(ip a)
 
 apt update && apt install -y sshpass
 
